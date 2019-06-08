@@ -12,6 +12,14 @@ var numbers = function() {
     
     else {
         // ??come up with clean logic
+
+        var numSet = 1;
+
+        r = new Array (numCount);
+
+        for (var i = 1; i <= numCount; i++) {
+            r[i] = Math.round(Math.random() * (maxNum - 1)) + 1;
+        }
     }
 
 }
