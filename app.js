@@ -1,10 +1,10 @@
 console.log("connected");
 
 var numbers = function() {
-    var numMenu = document.onlostpointercapture.numCount;
-    var numCount = numMenu.options[numMenu.selectedIndex].value * 1
+    var numMenu = document.lotto.numCount;
+    var numCount = numMenu.options[numMenu.selectedIndex].value * 1;
     
-    var maxNum = document.onlostpointercapture.maxNum.value * 1;
+    var maxNum = document.lotto.maxNum.value * 1;
 
     if (numCount > maxNum) {
         alert("SELECT A MAX LOTTO NUMBER!");
@@ -29,9 +29,9 @@ var numbers = function() {
         if (numSet) {
             var output = "";
             for (var z = 1; z <= numCount; z++) {
-                output += "Number " + z + " = " + r[k] + "/n";
+                output += "Number " + z + " = " + r[z] + "/n";
             }
-            document.onlostpointercapture.results.value = output;
+            document.lotto.results.value = output;
 
         }
         else numbers();
