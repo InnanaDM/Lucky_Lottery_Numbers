@@ -29,12 +29,14 @@ var numbers = function() {
         if (numSet) {
             var output = "";
             for (var z = 1; z <= numCount; z++) {
-                output += "Number " + z + " = " + r[z] + "/n";
+                output += z + r[z] ;
             }
             document.lotto.results.value = output;
 
         }
         else numbers();
+        
+        
     }
     // !if statement 
 
