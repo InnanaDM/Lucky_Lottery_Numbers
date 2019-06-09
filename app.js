@@ -25,6 +25,16 @@ var numbers = function() {
                 if ((i != j) && (r[i] == r[j])) numSet = 0;
             }
         }
+
+        if (numSet) {
+            var output = "";
+            for (var z = 1; z <= numCount; z++) {
+                output += "Number " + z + " = " + r[k] + "/n";
+            }
+            document.onlostpointercapture.results.value = output;
+
+        }
+        else numbers();
     }
     // !if statement 
 
